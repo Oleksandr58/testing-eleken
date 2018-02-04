@@ -1,0 +1,14 @@
+body {
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+    position: relative;
+}
