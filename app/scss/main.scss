@@ -1,0 +1,21 @@
+// Base import
+
+@import "reset";
+
+// Arguments
+
+@import "variables";
+@import "mixins";
+@import "common";
+
+// Styles import
+
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "layout/breakpoints/1200";
+@import "layout/breakpoints/992";
+@import "layout/breakpoints/768";
+@import "layout/breakpoints/576";
+
+
