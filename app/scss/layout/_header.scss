@@ -32,6 +32,8 @@
                 padding: 25px 10.5px;   
                 position: relative;
                 cursor: pointer;
+                opacity: 0.5;
+                transition: opacity $animation-time;
                 
                 &:after {
                     content: '';
@@ -50,6 +52,8 @@
                 }
 
                 &:hover, &--open {
+                    opacity: 1;
+                    
                     &::after {
                         width: 100%;
                     }
