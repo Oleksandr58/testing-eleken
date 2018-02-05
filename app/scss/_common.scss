@@ -27,6 +27,11 @@ body {
         cursor: pointer;
         opacity: 0.5;
         transition: opacity $animation-time;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
         
         &:after {
             content: '';

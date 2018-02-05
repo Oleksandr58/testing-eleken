@@ -132,8 +132,24 @@
                     }
                 }
 
-                &--platinum::before {
+                &[data-color="platinum"]::before {
                     background-color: $level-platinum-color;
+                }
+
+                &[data-color="gold"]::before {
+                    background-color: $level-gold-color;
+                }
+                
+                &[data-color="silver"]::before {
+                    background-color: $level-silver-color;
+                }
+
+                &[data-color="bronze"]::before {
+                    background-color: $level-bronze-color;
+                }
+
+                &[data-color="catastrophic"]::before {
+                    background-color: $level-catastophic-color;
                 }
             }
 
@@ -170,12 +186,13 @@
                     transition: transform $animation-time;
 
                     &:hover {
-                        transform: scale(1.1);
+                        transform: scale(1.15);
                     }
 
                     &--overview {
                         padding: 8px 26px;
-                        color: $secondary-color;
+                        color: $secondary-color;                        
+                        background-color: white;
                         border: $main-border-color 1px solid;
                     }
 
@@ -236,7 +253,7 @@
                             height: 12px;
                             fill: $disable-star-color;
 
-                            &--gold {
+                            &[data-color="gold"] {
                                 fill: $gold-star-color;
                             }
                         }
