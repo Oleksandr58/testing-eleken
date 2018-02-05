@@ -1,0 +1,13 @@
+.footer {
+    border-top: $main-border-color 1px solid;
+    padding-top: 30px;
+    padding-bottom: 33px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 85px;
+
+    &__nav {
+        display: inline-block;
+        margin-left: 20px;
+    }
+}

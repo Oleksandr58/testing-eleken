@@ -1,0 +1,248 @@
+.main {
+    &__title {
+        text-transform: none !important;
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    &__top {        
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 10px 0;
+        border-bottom: $main-border-color 1px solid;
+        margin-top: 30px;
+    }
+
+    &__type {
+        padding: 7.5px 0;
+        height: 18px;
+        display: inline-flex;
+        position: relative;        
+
+        &:after {
+            content: '';
+            height: 100%;
+            width: 1px;
+            background-color: $main-border-color;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .cart {
+        width: 18px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 15px;
+
+        &__element {
+            width: 100%;
+            border: $main-disable-element-color 1px solid;
+            border-radius: 1px;
+        }
+    }
+
+    .block {        
+        width: 18px;
+        height: 100%;
+        display: flex;        
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 15px;
+
+        &__element {
+            width: 4px;
+            height: 4px;
+            border: $main-disable-element-color 2px solid;
+            border-radius: 1px;
+        }
+    }
+
+    .cart, .block {   
+        cursor: pointer;
+
+        &:hover {         
+            .element { 
+                border-color: $primary-color;
+            }
+        }
+    }
+    
+    .active {                 
+        .element { 
+            border-color: $primary-color;
+        }
+    }
+
+    &__table {
+        .table {
+            &__captions {
+                margin-top: 21px;
+                display: flex;
+                justify-content: space-between;
+                margin-right: 235px;
+                width: calc(100% - 235px);                
+                text-transform: uppercase;
+                font-size: 10px;
+                line-height: 14px;
+                letter-spacing: 1.4px;
+                opacity: 0.4;
+            }
+
+            &__company {
+                width: 140px;
+                display: flex;
+                align-content: center;
+
+                &--top {
+                    margin-top: 9px;
+                }
+            }
+
+            &__covering {
+                width: 74px;
+            }
+
+            &__type {
+                width: 67px;
+            }
+
+            &__level {
+                width: 135px;
+
+                &--color {                      
+                    width: 116px;               
+                    padding-left: 19px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 12px;
+                        left: 0;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 50%;
+                    }
+                }
+
+                &--platinum::before {
+                    background-color: $level-platinum-color;
+                }
+            }
+
+            &__drugs {
+                width: 48px;
+            }
+
+            &__visits {
+                width: 76px;
+            }
+
+            &__deductible {
+                width: 78px;
+            }
+
+            &__price {
+                width: 70px;
+            }
+
+            &__buttons {
+                width: 195px;
+                text-align: right;
+
+                .btn {
+                    font-size: 10px;
+                    line-height: 14px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    background-color: transparent;
+                    border: none;
+                    margin-top: 4px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: transform $animation-time;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
+                    &--overview {
+                        padding: 8px 26px;
+                        color: $secondary-color;
+                        border: $main-border-color 1px solid;
+                    }
+
+                    &--buy {
+                        padding: 8px 23px;
+                        color: #FFFFFF;                        
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+
+            &__covering, &__type, &__level, &__drugs, &__visits, &__deductible, &__price {
+                padding-top: 9px;
+            }
+
+            &__help {
+                display: inline-block;
+                margin-left: 5px;
+                cursor: pointer;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background-color: $help-color;
+                font-size: 11px;
+                line-height: 15px;
+                color: $secondary-color;
+                font-weight: 600;
+                text-align: center;
+            }
+
+            &__row {
+                margin-top: 19px;
+                padding-top: 1px;
+                padding-bottom: 20px;
+                border-bottom: $main-border-color 1px solid;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .company {
+                    &__logo {
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        opacity: 0.9;
+                    }
+
+                    &__caption {
+                        display: inline-block;
+                        margin-left: 20px;
+                        position: relative;
+                        width: calc(100% - 63px);
+                    }
+
+                    &__rating {
+                        .star {
+                            width: 12px;
+                            height: 12px;
+                            fill: $disable-star-color;
+
+                            &--gold {
+                                fill: $gold-star-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

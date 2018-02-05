@@ -1,0 +1,92 @@
+{
+	"insure": [
+		{
+			"name": "Insurcom",
+			"rating": 5,
+			"covering":  "health",
+			"type": "PPO",
+			"level": "Platinum",
+			"drugs": "$15",
+			"visits": "$75",
+			"deductible": "$6000",
+			"price": "$356"
+		},
+		{
+			"name": "Health Ins",
+			"rating": 3,
+			"covering":  "All-in-one",
+			"type": "HMO",
+			"level": "Silver",
+			"drugs": "100%",
+			"visits": "$45",
+			"deductible": "$4500",
+			"price": "$611"
+		},
+		{
+			"name": "Dentalife",
+			"rating": 4,
+			"covering":  "Dental",
+			"type": "EPO",
+			"level": "Gold",
+			"drugs": "100%",
+			"visits": "$75",
+			"deductible": "$5000",
+			"price": "$283"
+		},
+		{
+			"name": "Insurcom",
+			"rating": 5,
+			"covering":  "Vision",
+			"type": "POS",
+			"level": "Bronze",
+			"drugs": "100%",
+			"visits": "$60",
+			"deductible": "$2600",
+			"price": "$214"
+		},
+		{
+			"name": "Medicon",
+			"rating": 5,
+			"covering":  "Health",
+			"type": "PPO",
+			"level": "Catastrophic",
+			"drugs": "$20",
+			"visits": "40%",
+			"deductible": "$6000",
+			"price": "$300"
+		},
+		{
+			"name": "Health Ins",
+			"rating": 3,
+			"covering":  "Dental",
+			"type": "POS",
+			"level": "Platinum",
+			"drugs": "$15",
+			"visits": "$75",
+			"deductible": "$5000",
+			"price": "$234"
+		},
+		{
+			"name": "Insurcom",
+			"rating": 5,
+			"covering":  "Health",
+			"type": "HMO",
+			"level": "Gold",
+			"drugs": "100%",
+			"visits": "$45",
+			"deductible": "$4500",
+			"price": "$366"
+		},
+		{
+			"name": "Medicon",
+			"rating": 5,
+			"covering":  "All-in-one ",
+			"type": "EPO",
+			"level": "Catastrophic",
+			"drugs": "$15",
+			"visits": "50%",
+			"deductible": "$2600",
+			"price": "$371"
+		}
+	]
+} 
