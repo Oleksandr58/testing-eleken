@@ -80,186 +80,336 @@
         }
     }
 
-    &__table {
-        .table {
-            &__captions {
-                margin-top: 21px;
-                display: flex;
-                justify-content: space-between;
-                margin-right: 235px;
-                width: calc(100% - 235px);                
-                text-transform: uppercase;
-                font-size: 10px;
-                line-height: 14px;
-                letter-spacing: 1.4px;
-                opacity: 0.4;
-            }
+    .table {        
+        &__cart {
+            display: none;
 
-            &__company {
-                width: 140px;
-                display: flex;
-                align-content: center;
-
-                &--top {
-                    margin-top: 9px;
-                }
-            }
-
-            &__covering {
-                width: 74px;
-            }
-
-            &__type {
-                width: 67px;
-            }
-
-            &__level {
-                width: 135px;
-
-                &--color {                      
-                    width: 116px;               
-                    padding-left: 19px;
-                    position: relative;
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 12px;
-                        left: 0;
-                        width: 14px;
-                        height: 14px;
-                        border-radius: 50%;
-                    }
-                }
-
-                &[data-color="platinum"]::before {
-                    background-color: $level-platinum-color;
-                }
-
-                &[data-color="gold"]::before {
-                    background-color: $level-gold-color;
-                }
-                
-                &[data-color="silver"]::before {
-                    background-color: $level-silver-color;
-                }
-
-                &[data-color="bronze"]::before {
-                    background-color: $level-bronze-color;
-                }
-
-                &[data-color="catastrophic"]::before {
-                    background-color: $level-catastophic-color;
-                }
-            }
-
-            &__drugs {
-                width: 48px;
-            }
-
-            &__visits {
-                width: 76px;
-            }
-
-            &__deductible {
-                width: 78px;
-            }
-
-            &__price {
-                width: 70px;
-            }
-
-            &__buttons {
-                width: 195px;
-                text-align: right;
-
-                .btn {
+            .table {
+                &__captions {
+                    margin-top: 21px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-right: 235px;
+                    width: calc(100% - 235px);                
+                    text-transform: uppercase;
                     font-size: 10px;
                     line-height: 14px;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    background-color: transparent;
-                    border: none;
-                    margin-top: 4px;
-                    border-radius: 4px;
-                    cursor: pointer;
-                    transition: transform $animation-time;
+                    letter-spacing: 1.4px;
+                    opacity: 0.4;
+                }
 
-                    &:hover {
-                        transform: scale(1.15);
-                    }
+                &__company {
+                    width: 140px;
+                    display: flex;
+                    align-content: center;
 
-                    &--overview {
-                        padding: 8px 26px;
-                        color: $secondary-color;                        
-                        background-color: white;
-                        border: $main-border-color 1px solid;
-                    }
-
-                    &--buy {
-                        padding: 8px 23px;
-                        color: #FFFFFF;                        
-                        background-color: $secondary-color;
+                    &--top {
+                        margin-top: 9px;
                     }
                 }
-            }
 
-            &__covering, &__type, &__level, &__drugs, &__visits, &__deductible, &__price {
-                padding-top: 9px;
-            }
+                &__covering {
+                    width: 74px;
+                }
 
-            &__help {
-                display: inline-block;
-                margin-left: 5px;
-                cursor: pointer;
-                width: 14px;
-                height: 14px;
-                border-radius: 50%;
-                background-color: $help-color;
-                font-size: 11px;
-                line-height: 15px;
-                color: $secondary-color;
-                font-weight: 600;
-                text-align: center;
-            }
+                &__type {
+                    width: 67px;
+                }
 
-            &__row {
-                margin-top: 19px;
-                padding-top: 1px;
-                padding-bottom: 20px;
-                border-bottom: $main-border-color 1px solid;
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
+                &__level {
+                    width: 135px;
 
-                .company {
-                    &__logo {
-                        height: 40px;
-                        width: 40px;
-                        border-radius: 50%;
-                        opacity: 0.9;
-                    }
-
-                    &__caption {
-                        display: inline-block;
-                        margin-left: 20px;
+                    &--color {                      
+                        width: 116px;               
+                        padding-left: 19px;
                         position: relative;
-                        width: calc(100% - 63px);
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 12px;
+                            left: 0;
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                        }
                     }
 
-                    &__rating {
-                        .star {
-                            width: 12px;
-                            height: 12px;
-                            fill: $disable-star-color;
+                    &[data-color="platinum"]::before {
+                        background-color: $level-platinum-color;
+                    }
 
-                            &[data-color="gold"] {
-                                fill: $gold-star-color;
+                    &[data-color="gold"]::before {
+                        background-color: $level-gold-color;
+                    }
+                    
+                    &[data-color="silver"]::before {
+                        background-color: $level-silver-color;
+                    }
+
+                    &[data-color="bronze"]::before {
+                        background-color: $level-bronze-color;
+                    }
+
+                    &[data-color="catastrophic"]::before {
+                        background-color: $level-catastophic-color;
+                    }
+                }
+
+                &__drugs {
+                    width: 48px;
+                }
+
+                &__visits {
+                    width: 76px;
+                }
+
+                &__deductible {
+                    width: 78px;
+                }
+
+                &__price {
+                    width: 70px;
+                }
+
+                &__buttons {
+                    width: 195px;
+                    text-align: right;
+
+                    .btn {
+                        font-size: 10px;
+                        line-height: 14px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        background-color: transparent;
+                        border: none;
+                        margin-top: 4px;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        transition: transform $animation-time;
+
+                        &:hover {
+                            transform: scale(1.15);
+                        }
+
+                        &--overview {
+                            padding: 8px 26px;
+                            color: $secondary-color;                        
+                            background-color: white;
+                            border: $main-border-color 1px solid;
+                        }
+
+                        &--buy {
+                            padding: 8px 23px;
+                            color: #FFFFFF;                        
+                            background-color: $secondary-color;
+                        }
+                    }
+                }
+
+                &__covering, &__type, &__level, &__drugs, &__visits, &__deductible, &__price {
+                    padding-top: 9px;
+                }
+
+                &__help {
+                    display: inline-block;
+                    margin-left: 5px;
+                    cursor: pointer;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    background-color: $help-color;
+                    font-size: 11px;
+                    line-height: 15px;
+                    color: $secondary-color;
+                    font-weight: 600;
+                    text-align: center;
+                }
+
+                &__row {
+                    margin-top: 19px;
+                    padding-top: 1px;
+                    padding-bottom: 20px;
+                    border-bottom: $main-border-color 1px solid;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .company {
+                        &__logo {
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 50%;
+                            opacity: 0.9;
+                        }
+
+                        &__caption {
+                            display: inline-block;
+                            margin-left: 20px;
+                            position: relative;
+                            width: calc(100% - 63px);
+                        }
+
+                        &__rating {
+                            .star {
+                                width: 12px;
+                                height: 12px;
+                                fill: $disable-star-color;
+
+                                &[data-color="gold"] {
+                                    fill: $gold-star-color;
+                                }
                             }
                         }
                     }
                 }
             }
         }
+
+        &__blocks {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .table {
+                &__block {
+                    width: calc(280px - 60px);
+                    padding: 0 30px;
+                    margin-top: 40px;
+                    border: $main-border-color 1px solid;     
+                    border-radius: 2px;  
+                    position: relative;         
+
+                    .company {
+                        &__logo {
+                            width: 55px;
+                            height: 55px;
+                            border-radius: 50%;
+                        }
+
+                        &__name {
+                            font-size: 20px;
+                            line-height: 27px;
+                        }
+
+                        &__caption {
+                            vertical-align: top;
+                            margin-left: 20px;
+                            margin-top: 3px;
+                        }
+
+                        &__rating {
+                            .star {
+                                width: 16px;
+                                height: 16px;
+                                fill: $disable-star-color;
+
+                                &[data-color="gold"] {
+                                    fill: $gold-star-color;
+                                }
+                            }
+                        }
+
+                        &__caption {
+                            display: inline-block;
+                        }
+                    }
+                }
+                
+                &__company {
+                    padding: 30px 0;
+                }
+
+                &__captions {
+                    float: left;      
+                }
+                
+                &__covering, &__type, &__level, &__drugs, &__visits, &__deductible {
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+                    text-align: right;                    
+                    border-bottom: $main-block-color 1px solid;
+                } 
+
+                &__deductible {
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                &__price {
+                    margin-top: 30px;
+                    padding-bottom: 70px;
+                    text-align: center;
+                    line-height: 41px;
+                    font-size: 20px;                       
+                    letter-spacing: 0.02em;               
+                    font-weight: 300;
+                    text-transform: none;
+                    padding-top: 5px;
+
+                    .price__text {
+                        display: inline;
+                        font-size: 36px;
+                    }
+                }
+
+                &__help {
+                    display: inline-block;
+                    cursor: pointer;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    background-color: $help-color;
+                    font-size: 11px;
+                    line-height: 15px;
+                    color: $secondary-color;
+                    font-weight: 600;
+                    text-align: center;
+                    opacity: 1 !important;
+                }   
+
+                &__buttons {
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    bottom: 0;
+                    display: flex;
+    
+                    .btn {
+                        width: 50%;
+                        font-size: 12px;
+                        line-height: 14px;
+                        letter-spacing: 0.07em;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        background-color: transparent;
+                        padding: 12px 0;
+                        border: none;
+                        cursor: pointer;
+                        transition: transform $animation-time;
+    
+                        &:hover {
+                            transform: scale(1.15);
+                        }
+    
+                        &--overview {
+                            color: $secondary-color;                        
+                            background-color: white;
+                            border: $main-border-color 1px solid;
+                        }
+    
+                        &--buy {
+                            color: #FFFFFF;                        
+                            background-color: $secondary-color;
+                        }
+                    }
+                }
+            }
+                
+            .captions__text {                                      
+                opacity: 0.5;
+            }            
+        }  
     }
 }
