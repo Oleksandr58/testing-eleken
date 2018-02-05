@@ -3,8 +3,7 @@ $( document ).ready(function() {
     $.getJSON('json/insure.json', function(data) {
       $.each(data, function() {
         if ('content' in document.createElement('template')) {
-          // Instantiate the table with the existing HTML tbody
-          // and the row with the template
+          // FOR ROW//
           var row = document.querySelector('#js-insurance__row'),
           name = row.content.querySelector('.company__name'),
           covering = row.content.querySelector('.table__covering'),
@@ -16,6 +15,7 @@ $( document ).ready(function() {
           price = row.content.querySelector('.js-price'),
           insure = data["cart"],
           table = document.querySelector(".main__table");
+          
 
            for (var i = 0; i < insure.length; i++) {     
             name.textContent = insure[i].name;
@@ -47,9 +47,59 @@ $( document ).ready(function() {
               var k = 5 * i + j;
               rating[k].setAttribute("data-color", "gold");
             }
-            
+
           }
         }
       });
+    });
+
+
+    var blocks = $('.table__blocks'),
+        rows = $('.table__cart'),
+        cartTouch = $('.cart'),
+        blocksTouch = $('.block'),
+        burger = $('.js-menu'),
+        mobileMenu = $('.nav__mobile'),
+        closeMenu = $('.close');
+
+    blocks.slideUp(0);
+    mobileMenu.slideUp(0);
+
+    burger.on('click', function() {
+      mobileMenu.slideToggle(1000);
+    });
+
+    closeMenu.on('click', function() {
+      mobileMenu.slideToggle(1000);
+    });
+
+    cartTouch.on('click', function() {
+      if (!cartTouch.hasClass('active')) {
+        cartTouch.addClass('active');
+        rows.slideToggle(1000);
+        blocks.slideToggle(1000);
+        blocksTouch.removeClass('active');
+      }
+    });
+
+    blocksTouch.on('click', function() {
+      if (!blocksTouch.hasClass('active')) {        
+        blocksTouch.addClass('active');
+        rows.slideToggle(1000);
+        blocks.slideToggle(1000);        
+        cartTouch.removeClass('active');
+      }
+    });
+
+    $(window).resize(function() {
+      if ($(window).width() <= '1200'){
+        if (!blocksTouch.hasClass('active')) {        
+          blocksTouch.addClass('active');
+          rows.slideToggle(1000);
+          blocks.slideToggle(1000);        
+          cartTouch.removeClass('active');
+        }
+      }
+
     });
 });

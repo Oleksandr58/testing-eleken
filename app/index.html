@@ -15,6 +15,12 @@
       <div class="wrapper">
     <h1 class="header__logo">insure&#046;</h1>
 
+
+    <div class="burger js-menu">
+        <div class="burger__element"></div>
+        <div class="burger__element"></div>
+        <div class="burger__element"></div>
+    </div>
     <nav class="header__nav">
         <ul class="nav__list">
             <li class="nav__item nav__item--open"><a href="">personal plans</a></li>
@@ -24,6 +30,17 @@
         </ul>
     </nav>
 </div>
+
+<nav class="nav__mobile">
+    <div class="close js_close-mobile"></div>
+
+    <ul class="nav__list">
+        <li class="nav__item"><a href="">personal plans</a></li>
+        <li class="nav__item"><a href="">business plans</a></li>
+        <li class="nav__item"><a href="">guide</a></li>
+        <li class="nav__item"><a href="">blog</a></li>
+    </ul>
+</nav>
     </header>
     <main class="main wrapper">
       <div class="main__top">
@@ -123,92 +140,622 @@
                 <span class="js-price">$611</span>/mon
             </div>
             <div class="table__buttons">
-                <button class="btn btn--overview">overview</button>
-                <button class="btn btn--buy">buy</button>
+                <button type="submit" class="btn btn--overview">overview</button>
+                <button type="submit" class="btn btn--buy">buy</button>
             </div>
         </div>  
     </template>
 </div>
 
 <div class="main__table table__blocks">
-    <!-- <template id="js-insurance__row"> -->
-        <div class="table__block">
-            <figure class="table__company">
-                <img class="company__logo" src="img/insurcom.png" alt="Insurcom logo">
-                <figcaption class="company__caption">
-                    <span class="company__name">Insurcom</span>
-                    <div class="company__rating">
-                        <svg class="star">
-                            <use xlink:href="./img/svgSprite.svg#star"></use>
-                        </svg>   
-                        <svg class="star">
-                            <use xlink:href="./img/svgSprite.svg#star"></use>
-                        </svg>   
-                        <svg class="star">
-                            <use xlink:href="./img/svgSprite.svg#star"></use>
-                        </svg>   
-                        <svg class="star">
-                            <use xlink:href="./img/svgSprite.svg#star"></use>
-                        </svg>   
-                        <svg class="star">
-                            <use xlink:href="./img/svgSprite.svg#star"></use>
-                        </svg>   
-                    </div>
-                </figcaption>
-            </figure>
-            <div class="table__covering">
-                <span class="table__captions captions__text">
-                    covering:
-                </span>
-                <span class="table__covering">
-                    health
-                </span>
-            </div>
-            <div class="table__type">
-                <span class="table__captions captions__text">
-                    type:
-                </span>
-                <span class="js-type">PRO</span>
+    <div class="table__block">
+        <figure class="table__company">
+            <img class="company__logo" src="img/insurcom.png" alt="Insurcom logo">
+            <figcaption class="company__caption">
+                <span class="company__name">Insurcom</span>
+                <div class="company__rating">
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                </div>
+            </figcaption>
+        </figure>
+        <div class="table__covering">
+            <span class="table__captions captions__text">
+                covering:
+            </span>
+            <span class="table__covering js-covering">
+                health
+            </span>
+        </div>
+        <div class="table__type">
+            <span class="table__captions captions__text">
+                type:
+            </span>
+            <span class="js-type">PRO</span>
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__level">     
+            <span class="table__captions captions__text">
+                Metal level:
+            </span>
+            <div class="table__color" data-color="platinum"></div>
+            <span class="js-level">platinum</span>           
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__drugs">         
+            <div class="table__captions">                    
                 <div class="table__help">?</div>
+                <span class="captions__text">drugs:</span>
             </div>
-            <div class="table__level">     
-                <span class="table__captions captions__text">
-                    Metal level:
-                </span>
-
-                <span class="js-level" data-color="platinum">platinum</span>           
+            $15
+        </div>
+        <div class="table__visits">       
+            <div class="table__captions">                    
                 <div class="table__help">?</div>
+                <span class="captions__text">Primary Care Visits:</span>
             </div>
-            <div class="table__drugs">         
-                <div class="table__captions">                    
-                    <div class="table__help">?</div>
-                    <span class="captions__text">drugs:</span>
+            $75
+        </div>
+        <div class="table__deductible">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Yearly Deductible</span>
+            </div>
+            $6000
+        </div>
+        <div class="table__price">
+            <div class="price__text"><span class="js-price">$356</span>/</div>mon
+        </div>
+        <div class="table__buttons">
+            <button type="submit" class="btn btn--overview">overview</button>
+            <button type="submit" class="btn btn--buy">buy</button>
+        </div>
+    </div>  
+    <div class="table__block">
+        <figure class="table__company">
+            <img class="company__logo" src="img/health_ins.png" alt="Health Ins logo">
+            <figcaption class="company__caption">
+                <span class="company__name">Health Ins</span>
+                <div class="company__rating">
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
                 </div>
-                $15
+            </figcaption>
+        </figure>
+        <div class="table__covering">
+            <span class="table__captions captions__text">
+                covering:
+            </span>
+            <span class="table__covering js-covering">
+                    All-in-one
+            </span>
+        </div>
+        <div class="table__type">
+            <span class="table__captions captions__text">
+                type:
+            </span>
+            <span class="js-type">HMO</span>
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__level">     
+            <span class="table__captions captions__text">
+                Metal level:
+            </span>
+            <div class="table__color" data-color="silver"></div>
+            <span class="js-level">silver</span>           
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__drugs">         
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">drugs:</span>
             </div>
-            <div class="table__visits">       
-                <div class="table__captions">                    
-                    <div class="table__help">?</div>
-                    <span class="captions__text">Primary Care Visits:</span>
+            $15
+        </div>
+        <div class="table__visits">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Primary Care Visits:</span>
+            </div>
+            $75
+        </div>
+        <div class="table__deductible">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Yearly Deductible</span>
+            </div>
+            $6000
+        </div>
+        <div class="table__price">
+            <div class="price__text"><span class="js-price">$611</span>/</div>mon
+        </div>
+        <div class="table__buttons">
+            <button type="submit" class="btn btn--overview">overview</button>
+            <button type="submit" class="btn btn--buy">buy</button>
+        </div>
+    </div>  
+    <div class="table__block">
+        <figure class="table__company">
+            <img class="company__logo" src="img/dentalife.png" alt="Dentalife logo">
+            <figcaption class="company__caption">
+                <span class="company__name">Dentalife</span>
+                <div class="company__rating">
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
                 </div>
-                $75
+            </figcaption>
+        </figure>
+        <div class="table__covering">
+            <span class="table__captions captions__text">
+                covering:
+            </span>
+            <span class="table__covering js-covering">
+                dental
+            </span>
+        </div>
+        <div class="table__type">
+            <span class="table__captions captions__text">
+                type:
+            </span>
+            <span class="js-type">EPO</span>
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__level">     
+            <span class="table__captions captions__text">
+                Metal level:
+            </span>
+            <div class="table__color" data-color="gold"></div>
+            <span class="js-level">gold</span>           
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__drugs">         
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">drugs:</span>
             </div>
-            <div class="table__deductible">       
-                <div class="table__captions">                    
-                    <div class="table__help">?</div>
-                    <span class="captions__text">Yearly Deductible</span>
+            $15
+        </div>
+        <div class="table__visits">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Primary Care Visits:</span>
+            </div>
+            $75
+        </div>
+        <div class="table__deductible">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Yearly Deductible</span>
+            </div>
+            $6000
+        </div>
+        <div class="table__price">
+            <div class="price__text"><span class="js-price">$283</span>/</div>mon
+        </div>
+        <div class="table__buttons">
+            <button type="submit" class="btn btn--overview">overview</button>
+            <button type="submit" class="btn btn--buy">buy</button>
+        </div>
+    </div>  
+    <div class="table__block">
+        <figure class="table__company">
+            <img class="company__logo" src="img/insurcom.png" alt="Insurcom logo">
+            <figcaption class="company__caption">
+                <span class="company__name">Insurcom</span>
+                <div class="company__rating">
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
                 </div>
-                $6000
+            </figcaption>
+        </figure>
+        <div class="table__covering">
+            <span class="table__captions captions__text">
+                covering:
+            </span>
+            <span class="table__covering js-covering">
+                vision
+            </span>
+        </div>
+        <div class="table__type">
+            <span class="table__captions captions__text">
+                type:
+            </span>
+            <span class="js-type">POS</span>
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__level">     
+            <span class="table__captions captions__text">
+                Metal level:
+            </span>
+            <div class="table__color" data-color="bronze"></div>
+            <span class="js-level">bronze</span>           
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__drugs">         
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">drugs:</span>
             </div>
-            <div class="table__price">
-                <div class="price__text"><span class="js-price">$356</span>/</div>mon
+            $15
+        </div>
+        <div class="table__visits">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Primary Care Visits:</span>
             </div>
-            <div class="table__buttons">
-                <button class="btn btn--overview">overview</button>
-                <button class="btn btn--buy">buy</button>
+            $75
+        </div>
+        <div class="table__deductible">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Yearly Deductible</span>
             </div>
-        </div>  
-    <!-- </template> -->
+            $6000
+        </div>
+        <div class="table__price">
+            <div class="price__text"><span class="js-price">$214</span>/</div>mon
+        </div>
+        <div class="table__buttons">
+            <button type="submit" class="btn btn--overview">overview</button>
+            <button type="submit" class="btn btn--buy">buy</button>
+        </div>
+    </div>  
+    <div class="table__block">
+        <figure class="table__company">
+            <img class="company__logo" src="img/insurcom.png" alt="Insurcom logo">
+            <figcaption class="company__caption">
+                <span class="company__name">Insurcom</span>
+                <div class="company__rating">
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                </div>
+            </figcaption>
+        </figure>
+        <div class="table__covering">
+            <span class="table__captions captions__text">
+                covering:
+            </span>
+            <span class="table__covering js-covering">
+                health
+            </span>
+        </div>
+        <div class="table__type">
+            <span class="table__captions captions__text">
+                type:
+            </span>
+            <span class="js-type">PRO</span>
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__level">     
+            <span class="table__captions captions__text">
+                Metal level:
+            </span>
+            <div class="table__color" data-color="platinum"></div>
+            <span class="js-level">platinum</span>           
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__drugs">         
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">drugs:</span>
+            </div>
+            $15
+        </div>
+        <div class="table__visits">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Primary Care Visits:</span>
+            </div>
+            $75
+        </div>
+        <div class="table__deductible">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Yearly Deductible</span>
+            </div>
+            $6000
+        </div>
+        <div class="table__price">
+            <div class="price__text"><span class="js-price">$356</span>/</div>mon
+        </div>
+        <div class="table__buttons">
+            <button type="submit" class="btn btn--overview">overview</button>
+            <button type="submit" class="btn btn--buy">buy</button>
+        </div>
+    </div>  
+    <div class="table__block">
+        <figure class="table__company">
+            <img class="company__logo" src="img/health_ins.png" alt="Health Ins logo">
+            <figcaption class="company__caption">
+                <span class="company__name">Health Ins</span>
+                <div class="company__rating">
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                </div>
+            </figcaption>
+        </figure>
+        <div class="table__covering">
+            <span class="table__captions captions__text">
+                covering:
+            </span>
+            <span class="table__covering js-covering">
+                    All-in-one
+            </span>
+        </div>
+        <div class="table__type">
+            <span class="table__captions captions__text">
+                type:
+            </span>
+            <span class="js-type">HMO</span>
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__level">     
+            <span class="table__captions captions__text">
+                Metal level:
+            </span>
+            <div class="table__color" data-color="silver"></div>
+            <span class="js-level">silver</span>           
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__drugs">         
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">drugs:</span>
+            </div>
+            $15
+        </div>
+        <div class="table__visits">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Primary Care Visits:</span>
+            </div>
+            $75
+        </div>
+        <div class="table__deductible">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Yearly Deductible</span>
+            </div>
+            $6000
+        </div>
+        <div class="table__price">
+            <div class="price__text"><span class="js-price">$611</span>/</div>mon
+        </div>
+        <div class="table__buttons">
+            <button type="submit" class="btn btn--overview">overview</button>
+            <button type="submit" class="btn btn--buy">buy</button>
+        </div>
+    </div>  
+    <div class="table__block">
+        <figure class="table__company">
+            <img class="company__logo" src="img/dentalife.png" alt="Dentalife logo">
+            <figcaption class="company__caption">
+                <span class="company__name">Dentalife</span>
+                <div class="company__rating">
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                </div>
+            </figcaption>
+        </figure>
+        <div class="table__covering">
+            <span class="table__captions captions__text">
+                covering:
+            </span>
+            <span class="table__covering js-covering">
+                dental
+            </span>
+        </div>
+        <div class="table__type">
+            <span class="table__captions captions__text">
+                type:
+            </span>
+            <span class="js-type">EPO</span>
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__level">     
+            <span class="table__captions captions__text">
+                Metal level:
+            </span>
+            <div class="table__color" data-color="gold"></div>
+            <span class="js-level">gold</span>           
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__drugs">         
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">drugs:</span>
+            </div>
+            $15
+        </div>
+        <div class="table__visits">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Primary Care Visits:</span>
+            </div>
+            $75
+        </div>
+        <div class="table__deductible">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Yearly Deductible</span>
+            </div>
+            $6000
+        </div>
+        <div class="table__price">
+            <div class="price__text"><span class="js-price">$283</span>/</div>mon
+        </div>
+        <div class="table__buttons">
+            <button type="submit" class="btn btn--overview">overview</button>
+            <button type="submit" class="btn btn--buy">buy</button>
+        </div>
+    </div>  
+    <div class="table__block">
+        <figure class="table__company">
+            <img class="company__logo" src="img/insurcom.png" alt="Insurcom logo">
+            <figcaption class="company__caption">
+                <span class="company__name">Insurcom</span>
+                <div class="company__rating">
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                    <svg class="star" data-color="gold">
+                        <use xlink:href="./img/svgSprite.svg#star"></use>
+                    </svg>   
+                </div>
+            </figcaption>
+        </figure>
+        <div class="table__covering">
+            <span class="table__captions captions__text">
+                covering:
+            </span>
+            <span class="table__covering js-covering">
+                vision
+            </span>
+        </div>
+        <div class="table__type">
+            <span class="table__captions captions__text">
+                type:
+            </span>
+            <span class="js-type">POS</span>
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__level">     
+            <span class="table__captions captions__text">
+                Metal level:
+            </span>
+            <div class="table__color" data-color="bronze"></div>
+            <span class="js-level">bronze</span>           
+            <div class="table__help">?</div>
+        </div>
+        <div class="table__drugs">         
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">drugs:</span>
+            </div>
+            $15
+        </div>
+        <div class="table__visits">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Primary Care Visits:</span>
+            </div>
+            $75
+        </div>
+        <div class="table__deductible">       
+            <div class="table__captions">                    
+                <div class="table__help">?</div>
+                <span class="captions__text">Yearly Deductible</span>
+            </div>
+            $6000
+        </div>
+        <div class="table__price">
+            <div class="price__text"><span class="js-price">$214</span>/</div>mon
+        </div>
+        <div class="table__buttons">
+            <button type="submit" class="btn btn--overview">overview</button>
+            <button type="submit" class="btn btn--buy">buy</button>
+        </div>
+    </div> 
 </div>
     </main>
     <footer class="footer">
